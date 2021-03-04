@@ -30,10 +30,3 @@ variable "subnet_id" {
   type        = string
   default     = ""
 }
-
-variable "subnet_ids" {
-  description = "A list of VPC Subnet IDs to launch in"
-  type        = list(string)
-  default     = []
-}
-
