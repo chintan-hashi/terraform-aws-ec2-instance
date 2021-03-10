@@ -43,3 +43,8 @@ output "instance_state" {
   description = "List of instance states of instances"
   value       = aws_instance.this.*.instance_state
 }
+
+output "availability_zone" {
+  description = "List of availability zones of instances"
+  value       = aws_instance.this.*.availability_zone
+}
